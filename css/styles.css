@@ -196,12 +196,9 @@ body {
   margin-right: 50px;
 }
 
-.icon .letter {
-  fill: var(--primary-text-color);
-}
-
-.icon :hover.letter {
-  fill: var(--accent-color);
+.icon {
+  display: flex;
+  align-items: center;
 }
 
 /*-----------------Hero-----------------*/
@@ -287,6 +284,19 @@ body {
   color: var(--title-text-color);
 }
 
+.about-icon-box {
+  background: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.about-icon {
+  width: 70px;
+  height: 70px;
+}
 /*-----------------Work-----------------*/
 .work {
   padding-bottom: 94px;
@@ -341,10 +351,81 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 
   color: var(--primary-text-color);
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10;
+}
+
+.social-icon {
+  fill: #afb1b8;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white);
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+/* ----------------Clients---------------- */
+.clients {
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.clients-item:not(last-child) {
+  margin-right: 10px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
 /*-----------------Footer-----------------*/
 .footer {
   padding-top: 60px;
