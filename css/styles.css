@@ -163,7 +163,8 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.current {
   color: var(--accent-color);
 }
 
